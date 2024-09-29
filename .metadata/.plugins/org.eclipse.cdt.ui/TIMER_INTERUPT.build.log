@@ -1,0 +1,23 @@
+11:59:12 **** Incremental Build of configuration Debug for project TIMER_INTERUPT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "TIMER_INTERUPT.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\WORKS\Third_Year\Sem_1\VI_XL\LAB2\TIMER_INTERUPT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER_INTERUPT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIMER_INTERUPT.elf
+ 
+arm-none-eabi-size   TIMER_INTERUPT.elf 
+arm-none-eabi-objdump -h -S  TIMER_INTERUPT.elf  > "TIMER_INTERUPT.list"
+arm-none-eabi-objcopy  -O ihex  TIMER_INTERUPT.elf  "TIMER_INTERUPT.hex"
+   text	   data	    bss	    dec	    hex	filename
+   7876	     24	   1648	   9548	   254c	TIMER_INTERUPT.elf
+arm-none-eabi-objcopy  -O binary  TIMER_INTERUPT.elf  "TIMER_INTERUPT.bin"
+Finished building: default.size.stdout
+ 
+Finished building: TIMER_INTERUPT.hex
+Finished building: TIMER_INTERUPT.bin
+ 
+ 
+Finished building: TIMER_INTERUPT.list
+ 
+
+11:59:13 Build Finished. 0 errors, 0 warnings. (took 1s.137ms)
+
