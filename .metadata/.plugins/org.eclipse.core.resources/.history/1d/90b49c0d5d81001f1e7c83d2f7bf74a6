@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "Ex6.h"
+#include "Ex5.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -96,16 +96,8 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   HAL_GPIO_WritePin(GPIOA, EN0_Pin|EN1_Pin|EN2_Pin|EN3_Pin, SET);
   int hour = 15, minute = 8, second = 50;
-
-
-  setTimer0(1000);
   while (1)
   {
-	  if(timer0_flag == 1){
-		  HAL_GPIO_TogglePin ( LED_RED_GPIO_Port , LED_RED_Pin );
-		  setTimer0 (2000) ;
-	  }
-
 	  second ++;
 	  if (second >= 60) {
 		  second = 0;
@@ -119,10 +111,7 @@ int main(void)
 		  hour = 0;
 	  }
 	  updateClockBuffer(hour, minute);
-
-
-
-	  //HAL_Delay (1000);
+	  HAL_Delay (1000);
 
     /* USER CODE END WHILE */
 
@@ -259,12 +248,6 @@ const int MAX_LED = 4;
 int index_led = 0;
 
 void HAL_TIM_PeriodElapsedCallback (TIM_HandleTypeDef * htim ){
-
-	timerRun();
-
-
-
-	// the clock------------------
 	counter--;
 	lecounter--;
 	if(counter <= 0) {

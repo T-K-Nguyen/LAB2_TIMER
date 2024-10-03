@@ -98,7 +98,7 @@ int main(void)
   int hour = 15, minute = 8, second = 50;
 
 
-  setTimer0(1000);
+  setTimer0(1000)
   while (1)
   {
 	  if(timer0_flag == 1){
@@ -264,7 +264,7 @@ void HAL_TIM_PeriodElapsedCallback (TIM_HandleTypeDef * htim ){
 
 
 
-	// the clock------------------
+	// the clock
 	counter--;
 	lecounter--;
 	if(counter <= 0) {
