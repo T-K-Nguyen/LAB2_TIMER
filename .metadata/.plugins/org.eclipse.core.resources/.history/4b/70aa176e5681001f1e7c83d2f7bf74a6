@@ -25,7 +25,7 @@ void timerRun(){
 */
 
 int led_buffer [4] = {1, 2, 3, 4};
-void update7SEG (int* index ){
+void update7SEG (int *index ){
 	switch (*index){
 		case 0:
 			display7SEG(led_buffer[*index]);

@@ -1304,3 +1304,201 @@ arm-none-eabi-size   TIMER_INTERUPT.elf
    8108	     44	   1644	   9796	   2644	TIMER_INTERUPT.elf
 Finished building: default.size.stdout
  
+13:56:46 **** Incremental Build of configuration Debug for project TIMER_INTERUPT ****
+make -j16 all 
+arm-none-eabi-size   TIMER_INTERUPT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8108	     44	   1644	   9796	   2644	TIMER_INTERUPT.elf
+Finished building: default.size.stdout
+ 
+14:01:20 **** Incremental Build of configuration Debug for project TIMER_INTERUPT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:241:15: warning: passing argument 1 of 'update7SEG' from incompatible pointer type [-Wincompatible-pointer-types]
+  241 |   update7SEG( &index_led);
+      |               ^~~~~~~~~~
+      |               |
+      |               int **
+In file included from ../Core/Src/main.c:25:
+../Core/Inc/Ex3.h:17:23: note: expected 'int *' but argument is of type 'int **'
+   17 | void update7SEG (int* index );
+      |                  ~~~~~^~~~~
+arm-none-eabi-gcc -o "TIMER_INTERUPT.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\WORKS\Third_Year\Sem_1\VI_XL\LAB2\TIMER_INTERUPT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER_INTERUPT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIMER_INTERUPT.elf
+ 
+arm-none-eabi-size   TIMER_INTERUPT.elf 
+arm-none-eabi-objdump -h -S  TIMER_INTERUPT.elf  > "TIMER_INTERUPT.list"
+arm-none-eabi-objcopy  -O ihex  TIMER_INTERUPT.elf  "TIMER_INTERUPT.hex"
+arm-none-eabi-objcopy  -O binary  TIMER_INTERUPT.elf  "TIMER_INTERUPT.bin"
+   text	   data	    bss	    dec	    hex	filename
+   8108	     44	   1644	   9796	   2644	TIMER_INTERUPT.elf
+Finished building: default.size.stdout
+ 
+Finished building: TIMER_INTERUPT.hex
+Finished building: TIMER_INTERUPT.bin
+ 
+ 
+Finished building: TIMER_INTERUPT.list
+ 
+14:02:13 **** Incremental Build of configuration Debug for project TIMER_INTERUPT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:241:15: warning: passing argument 1 of 'update7SEG' from incompatible pointer type [-Wincompatible-pointer-types]
+  241 |   update7SEG( &index_led);
+      |               ^~~~~~~~~~
+      |               |
+      |               int **
+In file included from ../Core/Src/main.c:25:
+../Core/Inc/Ex3.h:17:23: note: expected 'int *' but argument is of type 'int **'
+   17 | void update7SEG (int* index );
+      |                  ~~~~~^~~~~
+arm-none-eabi-gcc -o "TIMER_INTERUPT.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\WORKS\Third_Year\Sem_1\VI_XL\LAB2\TIMER_INTERUPT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER_INTERUPT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIMER_INTERUPT.elf
+ 
+arm-none-eabi-size   TIMER_INTERUPT.elf 
+arm-none-eabi-objdump -h -S  TIMER_INTERUPT.elf  > "TIMER_INTERUPT.list"
+   text	   data	    bss	    dec	    hex	filename
+   8108	     44	   1644	   9796	   2644	TIMER_INTERUPT.elf
+arm-none-eabi-objcopy  -O ihex  TIMER_INTERUPT.elf  "TIMER_INTERUPT.hex"
+arm-none-eabi-objcopy  -O binary  TIMER_INTERUPT.elf  "TIMER_INTERUPT.bin"
+Finished building: default.size.stdout
+ 
+Finished building: TIMER_INTERUPT.hex
+Finished building: TIMER_INTERUPT.bin
+ 
+ 
+Finished building: TIMER_INTERUPT.list
+ 
+14:05:23 **** Incremental Build of configuration Debug for project TIMER_INTERUPT ****
+make -j16 all 
+arm-none-eabi-size   TIMER_INTERUPT.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8108	     44	   1644	   9796	   2644	TIMER_INTERUPT.elf
+Finished building: default.size.stdout
+ 
+14:06:53 **** Incremental Build of configuration Debug for project TIMER_INTERUPT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:25:
+../Core/Inc/Ex4.h:12: warning: "led_count" redefined
+   12 | #define led_count 1
+      | 
+In file included from ../Core/Inc/Ex3.h:10,
+                 from ../Core/Inc/Ex4.h:10,
+                 from ../Core/Src/main.c:25:
+../Core/Inc/Ex2.h:13: note: this is the location of the previous definition
+   13 | #define led_count 100
+      | 
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:241:15: warning: passing argument 1 of 'update7SEG' from incompatible pointer type [-Wincompatible-pointer-types]
+  241 |   update7SEG( &index_led);
+      |               ^~~~~~~~~~
+      |               |
+      |               int **
+In file included from ../Core/Inc/Ex4.h:10,
+                 from ../Core/Src/main.c:25:
+../Core/Inc/Ex3.h:17:23: note: expected 'int *' but argument is of type 'int **'
+   17 | void update7SEG (int* index );
+      |                  ~~~~~^~~~~
+arm-none-eabi-gcc -o "TIMER_INTERUPT.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\WORKS\Third_Year\Sem_1\VI_XL\LAB2\TIMER_INTERUPT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER_INTERUPT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIMER_INTERUPT.elf
+ 
+arm-none-eabi-size   TIMER_INTERUPT.elf 
+arm-none-eabi-objdump -h -S  TIMER_INTERUPT.elf  > "TIMER_INTERUPT.list"
+arm-none-eabi-objcopy  -O ihex  TIMER_INTERUPT.elf  "TIMER_INTERUPT.hex"
+   text	   data	    bss	    dec	    hex	filename
+   8108	     44	   1644	   9796	   2644	TIMER_INTERUPT.elf
+arm-none-eabi-objcopy  -O binary  TIMER_INTERUPT.elf  "TIMER_INTERUPT.bin"
+Finished building: default.size.stdout
+ 
+Finished building: TIMER_INTERUPT.bin
+Finished building: TIMER_INTERUPT.hex
+ 
+ 
+Finished building: TIMER_INTERUPT.list
+ 
+14:07:33 **** Incremental Build of configuration Debug for project TIMER_INTERUPT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:25:
+../Core/Inc/Ex4.h:13: warning: "time_count" redefined
+   13 | #define time_count 1
+      | 
+In file included from ../Core/Inc/Ex3.h:10,
+                 from ../Core/Inc/Ex4.h:10,
+                 from ../Core/Src/main.c:25:
+../Core/Inc/Ex2.h:14: note: this is the location of the previous definition
+   14 | #define time_count 50
+      | 
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:241:15: warning: passing argument 1 of 'update7SEG' from incompatible pointer type [-Wincompatible-pointer-types]
+  241 |   update7SEG( &index_led);
+      |               ^~~~~~~~~~
+      |               |
+      |               int **
+In file included from ../Core/Inc/Ex4.h:10,
+                 from ../Core/Src/main.c:25:
+../Core/Inc/Ex3.h:17:23: note: expected 'int *' but argument is of type 'int **'
+   17 | void update7SEG (int* index );
+      |                  ~~~~~^~~~~
+arm-none-eabi-gcc -o "TIMER_INTERUPT.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\WORKS\Third_Year\Sem_1\VI_XL\LAB2\TIMER_INTERUPT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER_INTERUPT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIMER_INTERUPT.elf
+ 
+arm-none-eabi-size   TIMER_INTERUPT.elf 
+arm-none-eabi-objdump -h -S  TIMER_INTERUPT.elf  > "TIMER_INTERUPT.list"
+arm-none-eabi-objcopy  -O ihex  TIMER_INTERUPT.elf  "TIMER_INTERUPT.hex"
+   text	   data	    bss	    dec	    hex	filename
+   8108	     44	   1644	   9796	   2644	TIMER_INTERUPT.elf
+arm-none-eabi-objcopy  -O binary  TIMER_INTERUPT.elf  "TIMER_INTERUPT.bin"
+Finished building: default.size.stdout
+ 
+Finished building: TIMER_INTERUPT.hex
+Finished building: TIMER_INTERUPT.bin
+Finished building: TIMER_INTERUPT.list
+ 
+ 
+ 
+14:13:53 **** Incremental Build of configuration Debug for project TIMER_INTERUPT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/Ex3.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/Ex3.d" -MT"Core/Src/Ex3.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/Ex3.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:25:
+../Core/Inc/Ex4.h:13: warning: "time_count" redefined
+   13 | #define time_count 100
+      | 
+In file included from ../Core/Inc/Ex3.h:10,
+                 from ../Core/Inc/Ex4.h:10,
+                 from ../Core/Src/main.c:25:
+../Core/Inc/Ex2.h:14: note: this is the location of the previous definition
+   14 | #define time_count 50
+      | 
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:241:15: warning: passing argument 1 of 'update7SEG' from incompatible pointer type [-Wincompatible-pointer-types]
+  241 |   update7SEG( &index_led);
+      |               ^~~~~~~~~~
+      |               |
+      |               int **
+In file included from ../Core/Inc/Ex4.h:10,
+                 from ../Core/Src/main.c:25:
+../Core/Inc/Ex3.h:17:23: note: expected 'int *' but argument is of type 'int **'
+   17 | void update7SEG (int* index );
+      |                  ~~~~~^~~~~
+arm-none-eabi-gcc -o "TIMER_INTERUPT.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\WORKS\Third_Year\Sem_1\VI_XL\LAB2\TIMER_INTERUPT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER_INTERUPT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIMER_INTERUPT.elf
+ 
+arm-none-eabi-size   TIMER_INTERUPT.elf 
+arm-none-eabi-objdump -h -S  TIMER_INTERUPT.elf  > "TIMER_INTERUPT.list"
+arm-none-eabi-objcopy  -O ihex  TIMER_INTERUPT.elf  "TIMER_INTERUPT.hex"
+arm-none-eabi-objcopy  -O binary  TIMER_INTERUPT.elf  "TIMER_INTERUPT.bin"
+   text	   data	    bss	    dec	    hex	filename
+   8108	     44	   1644	   9796	   2644	TIMER_INTERUPT.elf
+Finished building: default.size.stdout
+ 
+Finished building: TIMER_INTERUPT.hex
+Finished building: TIMER_INTERUPT.bin
+ 
+Finished building: TIMER_INTERUPT.list
+ 
+ 
