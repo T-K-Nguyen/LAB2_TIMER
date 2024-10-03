@@ -10,7 +10,7 @@
 #include "Ex2.h"
 
 extern int timer1_flag;
-
+extern int led_buffer[];
 void display7SEG(int num);
 void setTimer1(int duration);
 void timerRun();
