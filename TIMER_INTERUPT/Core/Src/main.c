@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "Ex2.h"
+#include "Ex3.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -94,7 +94,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  HAL_GPIO_WritePin(GPIOA, EN0_Pin | EN1_Pin|EN2_Pin|EN3_Pin, SET);
+  HAL_GPIO_WritePin(GPIOA, EN0_Pin|EN1_Pin|EN2_Pin|EN3_Pin, SET);
   while (1)
   {
 
@@ -230,15 +230,16 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 int counter = time_count;
 int lecounter = led_count;
-int stat = -1; //RUN FROM 1 -> 3
+const int MAX_LED = 4;
+int* index_led = 0;
+
 void HAL_TIM_PeriodElapsedCallback (TIM_HandleTypeDef * htim ){
 	counter--;
 	lecounter--;
 	if(counter <= 0) {
 		counter = time_count;
-		digiClock(&stat);
+		update7SEG( &index_led);
 	}
-
 	//------------dot-------------
 	if(lecounter <= 0){
 		lecounter = led_count;
