@@ -885,72 +885,75 @@ int main(void)
  80006e8:	4b1e      	ldr	r3, [pc, #120]	; (8000764 <main+0xc4>)
  80006ea:	681b      	ldr	r3, [r3, #0]
  80006ec:	2b01      	cmp	r3, #1
- 80006ee:	d10b      	bne.n	8000708 <main+0x68>
+ 80006ee:	d127      	bne.n	8000740 <main+0xa0>
 		  //red_led----------------------
 		  HAL_GPIO_TogglePin( LED_RED_GPIO_Port , LED_RED_Pin );
  80006f0:	2120      	movs	r1, #32
  80006f2:	481b      	ldr	r0, [pc, #108]	; (8000760 <main+0xc0>)
  80006f4:	f000 fcdc 	bl	80010b0 <HAL_GPIO_TogglePin>
+
 		  //------------dot-------------
 		  HAL_GPIO_TogglePin(GPIOA , DOT_Pin);
  80006f8:	2110      	movs	r1, #16
  80006fa:	4819      	ldr	r0, [pc, #100]	; (8000760 <main+0xc0>)
  80006fc:	f000 fcd8 	bl	80010b0 <HAL_GPIO_TogglePin>
-		  setTimer0 (1000);
- 8000700:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
- 8000704:	f7ff ff6a 	bl	80005dc <setTimer0>
-	  }
-	  if(timer1_flag == 1){
- 8000708:	4b17      	ldr	r3, [pc, #92]	; (8000768 <main+0xc8>)
- 800070a:	681b      	ldr	r3, [r3, #0]
- 800070c:	2b01      	cmp	r3, #1
- 800070e:	d1eb      	bne.n	80006e8 <main+0x48>
-		  // the clock------------------
-		  update7SEG( &index_led);
- 8000710:	463b      	mov	r3, r7
- 8000712:	4618      	mov	r0, r3
- 8000714:	f7ff feaa 	bl	800046c <update7SEG>
+
 		  //counting time
 		  second ++;
- 8000718:	687b      	ldr	r3, [r7, #4]
- 800071a:	3301      	adds	r3, #1
- 800071c:	607b      	str	r3, [r7, #4]
+ 8000700:	687b      	ldr	r3, [r7, #4]
+ 8000702:	3301      	adds	r3, #1
+ 8000704:	607b      	str	r3, [r7, #4]
 		  if (second >= 60) {
- 800071e:	687b      	ldr	r3, [r7, #4]
- 8000720:	2b3b      	cmp	r3, #59	; 0x3b
- 8000722:	dd04      	ble.n	800072e <main+0x8e>
+ 8000706:	687b      	ldr	r3, [r7, #4]
+ 8000708:	2b3b      	cmp	r3, #59	; 0x3b
+ 800070a:	dd04      	ble.n	8000716 <main+0x76>
 			  second = 0;
- 8000724:	2300      	movs	r3, #0
- 8000726:	607b      	str	r3, [r7, #4]
+ 800070c:	2300      	movs	r3, #0
+ 800070e:	607b      	str	r3, [r7, #4]
 			  minute ++;
- 8000728:	68bb      	ldr	r3, [r7, #8]
- 800072a:	3301      	adds	r3, #1
- 800072c:	60bb      	str	r3, [r7, #8]
+ 8000710:	68bb      	ldr	r3, [r7, #8]
+ 8000712:	3301      	adds	r3, #1
+ 8000714:	60bb      	str	r3, [r7, #8]
 		  }
 		  if(minute >= 60) {
- 800072e:	68bb      	ldr	r3, [r7, #8]
- 8000730:	2b3b      	cmp	r3, #59	; 0x3b
- 8000732:	dd04      	ble.n	800073e <main+0x9e>
+ 8000716:	68bb      	ldr	r3, [r7, #8]
+ 8000718:	2b3b      	cmp	r3, #59	; 0x3b
+ 800071a:	dd04      	ble.n	8000726 <main+0x86>
 			  minute = 0;
- 8000734:	2300      	movs	r3, #0
- 8000736:	60bb      	str	r3, [r7, #8]
+ 800071c:	2300      	movs	r3, #0
+ 800071e:	60bb      	str	r3, [r7, #8]
 			  hour ++;
- 8000738:	68fb      	ldr	r3, [r7, #12]
- 800073a:	3301      	adds	r3, #1
- 800073c:	60fb      	str	r3, [r7, #12]
+ 8000720:	68fb      	ldr	r3, [r7, #12]
+ 8000722:	3301      	adds	r3, #1
+ 8000724:	60fb      	str	r3, [r7, #12]
 		  }
 		  if(hour >=24){
- 800073e:	68fb      	ldr	r3, [r7, #12]
- 8000740:	2b17      	cmp	r3, #23
- 8000742:	dd01      	ble.n	8000748 <main+0xa8>
+ 8000726:	68fb      	ldr	r3, [r7, #12]
+ 8000728:	2b17      	cmp	r3, #23
+ 800072a:	dd01      	ble.n	8000730 <main+0x90>
 			  hour = 0;
- 8000744:	2300      	movs	r3, #0
- 8000746:	60fb      	str	r3, [r7, #12]
+ 800072c:	2300      	movs	r3, #0
+ 800072e:	60fb      	str	r3, [r7, #12]
 		  }
 		  updateClockBuffer(hour, minute);
- 8000748:	68b9      	ldr	r1, [r7, #8]
- 800074a:	68f8      	ldr	r0, [r7, #12]
- 800074c:	f7ff ff0a 	bl	8000564 <updateClockBuffer>
+ 8000730:	68b9      	ldr	r1, [r7, #8]
+ 8000732:	68f8      	ldr	r0, [r7, #12]
+ 8000734:	f7ff ff16 	bl	8000564 <updateClockBuffer>
+
+		  setTimer0 (1000);
+ 8000738:	f44f 707a 	mov.w	r0, #1000	; 0x3e8
+ 800073c:	f7ff ff4e 	bl	80005dc <setTimer0>
+	  }
+	  if(timer1_flag == 1){
+ 8000740:	4b09      	ldr	r3, [pc, #36]	; (8000768 <main+0xc8>)
+ 8000742:	681b      	ldr	r3, [r3, #0]
+ 8000744:	2b01      	cmp	r3, #1
+ 8000746:	d1cf      	bne.n	80006e8 <main+0x48>
+		  // the clock------------------
+		  update7SEG( &index_led);
+ 8000748:	463b      	mov	r3, r7
+ 800074a:	4618      	mov	r0, r3
+ 800074c:	f7ff fe8e 	bl	800046c <update7SEG>
 		  setTimer1(500);
  8000750:	f44f 70fa 	mov.w	r0, #500	; 0x1f4
  8000754:	f7ff ff5c 	bl	8000610 <setTimer1>
