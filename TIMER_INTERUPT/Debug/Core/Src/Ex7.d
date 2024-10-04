@@ -1,4 +1,4 @@
-Core/Src/Ex6.o: ../Core/Src/Ex6.c ../Core/Inc/Ex6.h ../Core/Inc/Ex5.h \
+Core/Src/Ex7.o: ../Core/Src/Ex7.c ../Core/Inc/Ex7.h ../Core/Inc/Ex5.h \
  ../Core/Inc/Ex3.h ../Core/Inc/Ex2.h ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
@@ -26,7 +26,7 @@ Core/Src/Ex6.o: ../Core/Src/Ex6.c ../Core/Inc/Ex6.h ../Core/Inc/Ex5.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Core/Inc/Ex1.h
 
-../Core/Inc/Ex6.h:
+../Core/Inc/Ex7.h:
 
 ../Core/Inc/Ex5.h:
 

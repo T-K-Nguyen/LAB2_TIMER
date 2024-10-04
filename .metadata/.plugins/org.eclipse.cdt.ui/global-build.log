@@ -1865,3 +1865,285 @@ Finished building: TIMER_INTERUPT.bin
  
 Finished building: TIMER_INTERUPT.list
  
+15:43:17 **** Incremental Build of configuration Debug for project TIMER_INTERUPT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/Ex1.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/Ex1.d" -MT"Core/Src/Ex1.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/Ex1.o"
+arm-none-eabi-gcc "../Core/Src/Ex2.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/Ex2.d" -MT"Core/Src/Ex2.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/Ex2.o"
+arm-none-eabi-gcc "../Core/Src/Ex3.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/Ex3.d" -MT"Core/Src/Ex3.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/Ex3.o"
+arm-none-eabi-gcc "../Core/Src/Ex5.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/Ex5.d" -MT"Core/Src/Ex5.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/Ex5.o"
+arm-none-eabi-gcc "../Core/Src/Ex7.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/Ex7.d" -MT"Core/Src/Ex7.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/Ex7.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_hal_msp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_hal_msp.d" -MT"Core/Src/stm32f1xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f1xx_it.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f1xx_it.d" -MT"Core/Src/stm32f1xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f1xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f1xx.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f1xx.d" -MT"Core/Src/system_stm32f1xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f1xx.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:13: warning: unused variable 'MAX_LED' [-Wunused-variable]
+  101 |   const int MAX_LED = 4;
+      |             ^~~~~~~
+arm-none-eabi-gcc -o "TIMER_INTERUPT.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\WORKS\Third_Year\Sem_1\VI_XL\LAB2\TIMER_INTERUPT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER_INTERUPT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIMER_INTERUPT.elf
+ 
+arm-none-eabi-size   TIMER_INTERUPT.elf 
+arm-none-eabi-objdump -h -S  TIMER_INTERUPT.elf  > "TIMER_INTERUPT.list"
+arm-none-eabi-objcopy  -O ihex  TIMER_INTERUPT.elf  "TIMER_INTERUPT.hex"
+   text	   data	    bss	    dec	    hex	filename
+   8464	     40	   1656	  10160	   27b0	TIMER_INTERUPT.elf
+arm-none-eabi-objcopy  -O binary  TIMER_INTERUPT.elf  "TIMER_INTERUPT.bin"
+Finished building: default.size.stdout
+ 
+Finished building: TIMER_INTERUPT.hex
+Finished building: TIMER_INTERUPT.bin
+ 
+ 
+Finished building: TIMER_INTERUPT.list
+ 
+15:43:26 **** Incremental Build of configuration Debug for project TIMER_INTERUPT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "TIMER_INTERUPT.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\WORKS\Third_Year\Sem_1\VI_XL\LAB2\TIMER_INTERUPT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER_INTERUPT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIMER_INTERUPT.elf
+ 
+arm-none-eabi-size   TIMER_INTERUPT.elf 
+arm-none-eabi-objdump -h -S  TIMER_INTERUPT.elf  > "TIMER_INTERUPT.list"
+arm-none-eabi-objcopy  -O ihex  TIMER_INTERUPT.elf  "TIMER_INTERUPT.hex"
+   text	   data	    bss	    dec	    hex	filename
+   8460	     40	   1656	  10156	   27ac	TIMER_INTERUPT.elf
+arm-none-eabi-objcopy  -O binary  TIMER_INTERUPT.elf  "TIMER_INTERUPT.bin"
+Finished building: default.size.stdout
+ 
+Finished building: TIMER_INTERUPT.hex
+Finished building: TIMER_INTERUPT.bin
+ 
+Finished building: TIMER_INTERUPT.list
+ 
+ 
+15:44:12 **** Incremental Build of configuration Debug for project TIMER_INTERUPT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "TIMER_INTERUPT.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\WORKS\Third_Year\Sem_1\VI_XL\LAB2\TIMER_INTERUPT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER_INTERUPT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIMER_INTERUPT.elf
+ 
+arm-none-eabi-size   TIMER_INTERUPT.elf 
+arm-none-eabi-objdump -h -S  TIMER_INTERUPT.elf  > "TIMER_INTERUPT.list"
+arm-none-eabi-objcopy  -O ihex  TIMER_INTERUPT.elf  "TIMER_INTERUPT.hex"
+arm-none-eabi-objcopy  -O binary  TIMER_INTERUPT.elf  "TIMER_INTERUPT.bin"
+   text	   data	    bss	    dec	    hex	filename
+   8460	     40	   1656	  10156	   27ac	TIMER_INTERUPT.elf
+Finished building: default.size.stdout
+ 
+Finished building: TIMER_INTERUPT.bin
+Finished building: TIMER_INTERUPT.hex
+ 
+ 
+Finished building: TIMER_INTERUPT.list
+ 
+15:44:50 **** Incremental Build of configuration Debug for project TIMER_INTERUPT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "TIMER_INTERUPT.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\WORKS\Third_Year\Sem_1\VI_XL\LAB2\TIMER_INTERUPT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER_INTERUPT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIMER_INTERUPT.elf
+ 
+arm-none-eabi-size   TIMER_INTERUPT.elf 
+arm-none-eabi-objdump -h -S  TIMER_INTERUPT.elf  > "TIMER_INTERUPT.list"
+arm-none-eabi-objcopy  -O ihex  TIMER_INTERUPT.elf  "TIMER_INTERUPT.hex"
+arm-none-eabi-objcopy  -O binary  TIMER_INTERUPT.elf  "TIMER_INTERUPT.bin"
+   text	   data	    bss	    dec	    hex	filename
+   8460	     40	   1656	  10156	   27ac	TIMER_INTERUPT.elf
+Finished building: default.size.stdout
+ 
+Finished building: TIMER_INTERUPT.hex
+ 
+Finished building: TIMER_INTERUPT.bin
+ 
+Finished building: TIMER_INTERUPT.list
+ 
+15:45:31 **** Incremental Build of configuration Debug for project TIMER_INTERUPT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "TIMER_INTERUPT.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\WORKS\Third_Year\Sem_1\VI_XL\LAB2\TIMER_INTERUPT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER_INTERUPT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIMER_INTERUPT.elf
+ 
+arm-none-eabi-size   TIMER_INTERUPT.elf 
+arm-none-eabi-objdump -h -S  TIMER_INTERUPT.elf  > "TIMER_INTERUPT.list"
+arm-none-eabi-objcopy  -O ihex  TIMER_INTERUPT.elf  "TIMER_INTERUPT.hex"
+   text	   data	    bss	    dec	    hex	filename
+   8456	     40	   1656	  10152	   27a8	TIMER_INTERUPT.elf
+arm-none-eabi-objcopy  -O binary  TIMER_INTERUPT.elf  "TIMER_INTERUPT.bin"
+Finished building: default.size.stdout
+ 
+Finished building: TIMER_INTERUPT.hex
+Finished building: TIMER_INTERUPT.bin
+Finished building: TIMER_INTERUPT.list
+ 
+ 
+ 
+15:46:17 **** Incremental Build of configuration Debug for project TIMER_INTERUPT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "TIMER_INTERUPT.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\WORKS\Third_Year\Sem_1\VI_XL\LAB2\TIMER_INTERUPT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER_INTERUPT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIMER_INTERUPT.elf
+ 
+arm-none-eabi-size   TIMER_INTERUPT.elf 
+arm-none-eabi-objdump -h -S  TIMER_INTERUPT.elf  > "TIMER_INTERUPT.list"
+arm-none-eabi-objcopy  -O ihex  TIMER_INTERUPT.elf  "TIMER_INTERUPT.hex"
+arm-none-eabi-objcopy  -O binary  TIMER_INTERUPT.elf  "TIMER_INTERUPT.bin"
+   text	   data	    bss	    dec	    hex	filename
+   8460	     40	   1656	  10156	   27ac	TIMER_INTERUPT.elf
+Finished building: default.size.stdout
+Finished building: TIMER_INTERUPT.hex
+Finished building: TIMER_INTERUPT.list
+Finished building: TIMER_INTERUPT.bin
+ 
+ 
+ 
+ 
+11:30:12 **** Incremental Build of configuration Debug for project TIMER_INTERUPT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:100:7: warning: unused variable 'lecounter' [-Wunused-variable]
+  100 |   int lecounter = led_count;
+      |       ^~~~~~~~~
+../Core/Src/main.c:99:7: warning: unused variable 'counter' [-Wunused-variable]
+   99 |   int counter = time_count;
+      |       ^~~~~~~
+arm-none-eabi-gcc -o "TIMER_INTERUPT.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\WORKS\Third_Year\Sem_1\VI_XL\LAB2\TIMER_INTERUPT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER_INTERUPT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIMER_INTERUPT.elf
+ 
+arm-none-eabi-size   TIMER_INTERUPT.elf 
+arm-none-eabi-objdump -h -S  TIMER_INTERUPT.elf  > "TIMER_INTERUPT.list"
+arm-none-eabi-objcopy  -O ihex  TIMER_INTERUPT.elf  "TIMER_INTERUPT.hex"
+arm-none-eabi-objcopy  -O binary  TIMER_INTERUPT.elf  "TIMER_INTERUPT.bin"
+   text	   data	    bss	    dec	    hex	filename
+   8428	     40	   1656	  10124	   278c	TIMER_INTERUPT.elf
+Finished building: default.size.stdout
+ 
+Finished building: TIMER_INTERUPT.hex
+Finished building: TIMER_INTERUPT.bin
+ 
+ 
+Finished building: TIMER_INTERUPT.list
+ 
+11:30:22 **** Incremental Build of configuration Debug for project TIMER_INTERUPT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "TIMER_INTERUPT.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\WORKS\Third_Year\Sem_1\VI_XL\LAB2\TIMER_INTERUPT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER_INTERUPT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIMER_INTERUPT.elf
+ 
+arm-none-eabi-size   TIMER_INTERUPT.elf 
+arm-none-eabi-objdump -h -S  TIMER_INTERUPT.elf  > "TIMER_INTERUPT.list"
+   text	   data	    bss	    dec	    hex	filename
+   8420	     40	   1656	  10116	   2784	TIMER_INTERUPT.elf
+arm-none-eabi-objcopy  -O ihex  TIMER_INTERUPT.elf  "TIMER_INTERUPT.hex"
+arm-none-eabi-objcopy  -O binary  TIMER_INTERUPT.elf  "TIMER_INTERUPT.bin"
+Finished building: default.size.stdout
+ 
+Finished building: TIMER_INTERUPT.hex
+Finished building: TIMER_INTERUPT.bin
+ 
+ 
+Finished building: TIMER_INTERUPT.list
+ 
+11:30:59 **** Incremental Build of configuration Debug for project TIMER_INTERUPT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "TIMER_INTERUPT.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\WORKS\Third_Year\Sem_1\VI_XL\LAB2\TIMER_INTERUPT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER_INTERUPT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIMER_INTERUPT.elf
+ 
+arm-none-eabi-size   TIMER_INTERUPT.elf 
+arm-none-eabi-objdump -h -S  TIMER_INTERUPT.elf  > "TIMER_INTERUPT.list"
+arm-none-eabi-objcopy  -O ihex  TIMER_INTERUPT.elf  "TIMER_INTERUPT.hex"
+   text	   data	    bss	    dec	    hex	filename
+   8420	     40	   1656	  10116	   2784	TIMER_INTERUPT.elf
+arm-none-eabi-objcopy  -O binary  TIMER_INTERUPT.elf  "TIMER_INTERUPT.bin"
+Finished building: default.size.stdout
+ 
+Finished building: TIMER_INTERUPT.hex
+Finished building: TIMER_INTERUPT.bin
+ 
+ 
+Finished building: TIMER_INTERUPT.list
+ 
+11:32:52 **** Incremental Build of configuration Debug for project TIMER_INTERUPT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "TIMER_INTERUPT.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\WORKS\Third_Year\Sem_1\VI_XL\LAB2\TIMER_INTERUPT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER_INTERUPT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIMER_INTERUPT.elf
+ 
+arm-none-eabi-size   TIMER_INTERUPT.elf 
+arm-none-eabi-objdump -h -S  TIMER_INTERUPT.elf  > "TIMER_INTERUPT.list"
+arm-none-eabi-objcopy  -O ihex  TIMER_INTERUPT.elf  "TIMER_INTERUPT.hex"
+   text	   data	    bss	    dec	    hex	filename
+   8420	     40	   1656	  10116	   2784	TIMER_INTERUPT.elf
+arm-none-eabi-objcopy  -O binary  TIMER_INTERUPT.elf  "TIMER_INTERUPT.bin"
+Finished building: default.size.stdout
+ 
+Finished building: TIMER_INTERUPT.hex
+Finished building: TIMER_INTERUPT.bin
+Finished building: TIMER_INTERUPT.list
+ 
+ 
+ 
+11:33:05 **** Incremental Build of configuration Debug for project TIMER_INTERUPT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "TIMER_INTERUPT.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\WORKS\Third_Year\Sem_1\VI_XL\LAB2\TIMER_INTERUPT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER_INTERUPT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIMER_INTERUPT.elf
+ 
+arm-none-eabi-size   TIMER_INTERUPT.elf 
+arm-none-eabi-objdump -h -S  TIMER_INTERUPT.elf  > "TIMER_INTERUPT.list"
+   text	   data	    bss	    dec	    hex	filename
+   8420	     40	   1656	  10116	   2784	TIMER_INTERUPT.elf
+arm-none-eabi-objcopy  -O ihex  TIMER_INTERUPT.elf  "TIMER_INTERUPT.hex"
+arm-none-eabi-objcopy  -O binary  TIMER_INTERUPT.elf  "TIMER_INTERUPT.bin"
+Finished building: default.size.stdout
+ 
+Finished building: TIMER_INTERUPT.hex
+Finished building: TIMER_INTERUPT.bin
+ 
+Finished building: TIMER_INTERUPT.list
+ 
+ 
+11:42:17 **** Incremental Build of configuration Debug for project TIMER_INTERUPT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "TIMER_INTERUPT.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\WORKS\Third_Year\Sem_1\VI_XL\LAB2\TIMER_INTERUPT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER_INTERUPT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIMER_INTERUPT.elf
+ 
+arm-none-eabi-size   TIMER_INTERUPT.elf 
+arm-none-eabi-objdump -h -S  TIMER_INTERUPT.elf  > "TIMER_INTERUPT.list"
+arm-none-eabi-objcopy  -O ihex  TIMER_INTERUPT.elf  "TIMER_INTERUPT.hex"
+   text	   data	    bss	    dec	    hex	filename
+   8420	     40	   1656	  10116	   2784	TIMER_INTERUPT.elf
+arm-none-eabi-objcopy  -O binary  TIMER_INTERUPT.elf  "TIMER_INTERUPT.bin"
+Finished building: default.size.stdout
+ 
+Finished building: TIMER_INTERUPT.bin
+Finished building: TIMER_INTERUPT.hex
+ 
+ 
+Finished building: TIMER_INTERUPT.list
+ 
+11:44:16 **** Incremental Build of configuration Debug for project TIMER_INTERUPT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/Ex7.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/Ex7.d" -MT"Core/Src/Ex7.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/Ex7.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "TIMER_INTERUPT.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\WORKS\Third_Year\Sem_1\VI_XL\LAB2\TIMER_INTERUPT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="TIMER_INTERUPT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: TIMER_INTERUPT.elf
+ 
+arm-none-eabi-size   TIMER_INTERUPT.elf 
+arm-none-eabi-objdump -h -S  TIMER_INTERUPT.elf  > "TIMER_INTERUPT.list"
+arm-none-eabi-objcopy  -O ihex  TIMER_INTERUPT.elf  "TIMER_INTERUPT.hex"
+   text	   data	    bss	    dec	    hex	filename
+   8424	     40	   1656	  10120	   2788	TIMER_INTERUPT.elf
+arm-none-eabi-objcopy  -O binary  TIMER_INTERUPT.elf  "TIMER_INTERUPT.bin"
+Finished building: default.size.stdout
+ 
+Finished building: TIMER_INTERUPT.hex
+Finished building: TIMER_INTERUPT.bin
+ 
+ 
+Finished building: TIMER_INTERUPT.list
+ 
